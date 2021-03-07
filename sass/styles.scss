@@ -1,0 +1,262 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Bitter', serif;
+}
+
+body {
+  background: url("../images/kirill-balobanov-RIEiEBQgOeE-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  padding-top: 20px;
+  color: white;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  margin: 0 auto;
+  .left_header {
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    .lines {
+      width: 20px;
+    }
+  }
+
+  .right_header {
+    background: white;
+    border-radius: 30px;
+    width: 8%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .avatar {
+      width: 20px;
+    }
+
+    .header_line {
+      height: 60%;
+      width: 1px;
+      background: lightgray;
+    }
+
+    .search {
+      width: 20px;
+    }
+  }
+}
+
+.mid_content {
+  padding-top: 20px;
+  margin: 0 auto;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+
+  .mid_content_left {
+    display: flex;
+    align-items: center;
+  }
+
+  .mid_header {
+    position: absolute;
+    height: 100px;
+    transform: rotate(-90deg);
+    top: 330px;
+    left: -130px;
+
+  }
+
+  h3 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    color: white;
+    font-size: 4rem;
+  }
+
+  .mid_text {
+    width: 350px;
+    color: white;
+    margin-left: 200px;
+
+
+    .num_box {
+      border: 1px solid lightslategrey;
+      padding: 20px;
+      width: min-content;
+      color: white;
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
+
+    p {
+      line-height: 25px;
+      font-weight: 400;
+
+    }
+
+    .para_first {
+      margin-bottom: 15px;
+    }
+  }
+
+  .read_more {
+    text-decoration: underline;
+    line-height: 55px;
+
+  }
+
+  .icons {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: auto;
+  }
+
+  .social_icon_container {
+    margin-top: 45px;
+    margin-right: 15px;
+    border: 1px solid white;
+    padding: 15px;
+    width: 42px;
+    height: 42px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social_icon {
+    width: 20px;
+    color: white;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .mid_content_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .horizontal_line {
+      height: 80vh;
+
+      width: 1px;
+      border-right: 1px solid white;
+    }
+  }
+}
+
+.bottom_content {
+  padding-top: 20px;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+
+  p {
+    color: white;
+  }
+
+  .bottom_line_left {
+    width: 17%;
+    height: 1px;
+    border-bottom: 1px solid white;
+  }
+
+  .bottom_img {
+    width: 42px;
+    height: 42px;
+
+  }
+
+  .bottom_line_right {
+    width: 50%;
+    height: 1px;
+    border-bottom: 1px solid white;
+  }
+
+  .arrows {
+    width: 8%;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .arrow_container {
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 20px;
+    }
+
+  }
+
+  .left_arrow {
+    transform: rotate(180deg);
+  }
+}
+
+.right_pic {
+  position: absolute;
+  top: 20%;
+  right: 0px;
+
+  img {
+    width: 400px;
+    position: relative;
+  }
+}
+
+.circle {
+  width: 300px;
+  height: 300px;
+  border: solid 1px lightslategrey;
+  padding: 30px;
+  border-radius: 700px;
+  z-index: 99999999999;
+  position: absolute;
+  bottom: -200px;
+  left: -180px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  .circle_text {
+    color: white;
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 1.5rem;
+  }
+}
